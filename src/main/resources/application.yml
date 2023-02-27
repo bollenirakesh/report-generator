@@ -1,0 +1,24 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+aggregate-report-route:
+  rootDirectory: /Users/karthik_ceekala/Downloads/build_reports
+  backupDirectory: /
+  targetDirectory: /Users/karthik_ceekala/Downloads/build_reports_backup
+
+redis:
+  host: 192.168.4.153
+  port: 55001
+  username: default
+  password: redispw
+
+notification-service:
+  url: http://192.168.4.153:8081
+retry:
+  maxAttempts: 3
+
+
+
